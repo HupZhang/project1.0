@@ -23,17 +23,16 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
-
+/* --------------------------------
 Navigation
-
 -------------------------------- */
 .cd-side-navigation {
   position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
-  height: 100vh;
+  /*min-height: 1000px;*/
+  height: 100%;
   width: 74px;
   overflow: hidden;
 }
@@ -137,6 +136,7 @@ Navigation
 @media only screen and (min-width: 480px) {
   .cd-side-navigation {
     width: 94px;
+    height: 100%;
   }
   .cd-side-navigation a {
     padding: 4em 0 1.5em;
@@ -147,14 +147,16 @@ Navigation
   }
 }
 
-/* -------------------------------- 
-
+/* --------------------------------
  Main Content
-
 -------------------------------- */
 .cd-main {
   height: 100vh;
   overflow: hidden;
+  min-width: 600px;
+  max-width: 1076px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .cd-section {
@@ -194,17 +196,14 @@ Navigation
   background: #83b0b9;
   overflow: hidden;
 }
-.cd-section.King header {
-  background-color: #d35657;
+.cd-section.services header {
+  background-color: #337ab7;
 }
-.cd-section.Family header {
+.cd-section.projects header {
   background-color: #343943;
 }
-.cd-section.About header {
+.cd-section.contact header {
   background-color: #e4b162;
-}
-.cd-section.Character header {
-  background-color: #337ab7;
 }
 .cd-section .cd-scroll {
   /* this is the arrow at the bottom of the header */
@@ -261,7 +260,7 @@ Navigation
   -moz-animation-iteration-count: 2;
   animation-iteration-count: 2;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
   .cd-section {
     padding-left: 90px;
   }
@@ -362,14 +361,14 @@ Navigation
   -moz-transition: -moz-transform 0.4s 0.3s, opacity 0.4s 0.3s;
   transition: transform 0.4s 0.3s, opacity 0.4s 0.3s;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .cd-title h2 {
     font-size: 5rem;
   }
 }
 
 .cd-content {
-  padding: 2em 0;
+  padding: 0em 0;
   background-color: #ebebeb;
 }
 .cd-content p {
@@ -379,12 +378,14 @@ Navigation
   line-height: 1.6;
   color: #999999;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .cd-content {
     padding: 4em 0;
-  }
-  .cd-content p {
-    font-size: 1.6rem;
+    text-align: center;
+    max-width: 1076px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 1000px;
   }
 }
 
@@ -411,22 +412,29 @@ Navigation
 #cd-loading-bar.index {
   background-color: #83b0b9;
 }
+
 #cd-loading-bar.King {
   background-color: #d35657;
 }
+
 #cd-loading-bar.Family {
   background-color: #343943;
 }
 #cd-loading-bar.About {
   background-color: #e4b162;
 }
+
 #cd-loading-bar.Character {
   background-color: #337ab7;
+}
+
+#cd-loading-bar.Contact {
+  background-color: #ebccd1;
 }
 #cd-loading-bar.loading {
   visibility: visible;
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
   #cd-loading-bar {
     left: 90px;
   }
