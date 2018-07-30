@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset=utf-8">                                                 <!--规定 HTML 文档的字符编码,HTML5的新用法-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">                 <!--IE8/9及以后的版本以最高版本IE来渲染页面 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Valora.Zhang">
+    <title> A Song of Ice and Fire</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/basic.css"/>
+    <link rel="stylesheet" href="./css/font/iconfont.css"/>
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-2.1.4.js"></script>
+
+</head>
+<body>
+<nav class="cd-side-navigation">
+    <ul>
+        <li>
+            <a href="#0" data-menu="index">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polygon fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                                 stroke-miterlimit="10" points="12,2 3,10 3,23 9,23 9,16 15,16 15,23 21,23 21,10 "
+                                 stroke-linejoin="miter"></polygon>
+                    </g>
+                </svg>
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="King">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                King
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="Family">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                    </g>
+                </svg>
+                Family
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" class="selected" data-menu="About">
+                </svg>
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                </svg>
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="Character">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 19,7 12,14 5,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="3" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="18" stroke-linejoin="miter"></rect>
+                        <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="7" y1="15" x2="5" y2="17" stroke-linejoin="miter"></line>
+                        <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="17" y1="15" x2="19" y2="17" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                </svg>
+                Character
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<main class="cd-main">
+    <section class="cd-section About visible">
+        <header>
+            <div class="cd-title">
+                <h2>About</h2>
+                <span>Some text here</span>
+            </div>
+            <a href="#contact-content" class="cd-scroll"></a>
+        </header>
+        <div class="cd-content" id="contact-content">
+            <section>
+                <h2>ABOUT</h2>
+                <p>The development curve of the story.</p>
+                <ul class="time-line">
+                    <li>
+                        <img src="image/time1.jpg" alt="Game of Thrones Season 1"/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 1</dt>
+                            <dt> 2011.4</dt>
+                            <dd>The story took place in an imaginary continent focuses on the Lord of the king of the north border stark family Ed stark king invited to enter parliament,
+                                become the right hand of the king, the prime minister after a series of love-hate, loss events</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time2.jpg" alt="Game of Thrones Season 2"/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 2</dt>
+                            <dt>2012.4</dt>
+                            <dd>Plot around Ed after the death of stark, its belong to minister him-and robb stark for the king of the north border,
+                                the firstborn of northern army led by robb stark and strength lannister mutual confrontation,
+                                the south boundary of renly soldier keeps in king's landing zone, and unclear stannis, peoples as well as the iron islands of northwest above the black sea</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time3.jpg" alt=""/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 3</dt>
+                            <dt>2013.3</dt>
+                            <dd>Plot, according to George Martin's novel song of ice and fire series of third freezing rain storms About burning black river has been cooling,
+                                to celebrate their victory over the city, and start the reconstruction,but the iron throne debate rumbles on</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time4.jpg" alt="Game of Thrones Season 4"/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 4</dt>
+                            <dt>2014.4</dt>
+                            <dd>King joffrey ushered in his wedding, but did not know that the crisis would approach him.At the same time, the dragon mother continued to
+                                lead the free slaves and Jon led his watchman brothers on the Great Wall to defend against the savage attacks.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time5.jpg" alt="Game of Thrones Season 5"/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 5</dt>
+                            <dt>2015.4</dt>
+                            <dd>The rule of cersei lannister daenerys targaryen was met with great difficulty;Meanwhile, the stark children plot revenge;
+                                On the Great Wall, the night watchman, Jon snow,wanted to build an alliance with the wildlings,
+                                and to resist the demons, but he was betrayed by his night watchmen.</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time6.jpg" alt=""/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 6</dt>
+                            <dt>2016.4</dt>
+                            <dd>Sixth season, tells the story of sansa stark, escaped from the city by burton family control over the winter,
+                                started a fisherman's in winds of winter trip to dany Liz was walking on a path of evil, flowing in the killing of the blood is her power of war and genocide,
+                                hammering a sword of war, close combat cardiac life fight fierce confrontation, to meet the passion of blood and fire baptism</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="image/time7.jpg" alt=""/>
+                        <dl>
+                            <dt> A Song of Ice and Fire 7</dt>
+                            <dt>2017.7</dt>
+                            <dd>The season about the dragonmother about this dany,Liz temple, gayle Ann return to westeros and prepare to unified seven kingdoms,
+                                was northern Wang Qiongen ·snow warning from the north of the dead army a deadly threat
+                                Winds in winter has come, and cold blend, world war came, and all the family will be faced with the final decisive battle of life and death</dd>
+                        </dl>
+                    </li>
+                    <li class="last">
+                <span class="img">
+                    One dragon is dead and two are still alive.
+                </span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+</main>
+
+<div id="cd-loading-bar" data-scale="1" class="About"></div>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

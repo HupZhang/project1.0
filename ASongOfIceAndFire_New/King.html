@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset=utf-8">                                                 <!--规定 HTML 文档的字符编码,HTML5的新用法-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge">                 <!--IE8/9及以后的版本以最高版本IE来渲染页面 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Valora.Zhang">
+    <title> A Song of Ice and Fire</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/basic.css"/>
+    <link rel="stylesheet" href="./css/font/iconfont.css"/>
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="./css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-2.1.4.js"></script>
+
+</head>
+<body class="layout">
+<nav class="cd-side-navigation">
+    <ul>
+        <li>
+            <a href="#0" data-menu="index">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polygon fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                                 stroke-miterlimit="10" points="12,2 3,10 3,23 9,23 9,16 15,16 15,23 21,23 21,10 "
+                                 stroke-linejoin="miter"></polygon>
+                    </g>
+                </svg>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#0" class="selected" data-menu="King">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                King
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="Family">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <rect x="1" y="1" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="22" stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="5" y="5" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="14" y="5" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="5" y="14" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                        <rect data-color="color-2" x="14" y="14" fill="none" stroke="#4a5261" stroke-width="2"
+                              stroke-linecap="square" stroke-miterlimit="10" width="5" height="5"
+                              stroke-linejoin="miter"></rect>
+                    </g>
+                </svg>
+                Family
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="About">
+                </svg>
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 16,7 16,2 8,2 8,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="7" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="15" stroke-linejoin="miter"></rect>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="5" y1="7" x2="5" y2="22" stroke-linejoin="miter"></line>
+                        <line fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="19" y1="7" x2="19" y2="22" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                </svg>
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="#0" data-menu="Character">
+                <svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24">
+                    <g transform="translate(0, 0)">
+                        <polyline data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2"
+                                  stroke-linecap="square" stroke-miterlimit="10" points=" 19,7 12,14 5,7 "
+                                  stroke-linejoin="miter"></polyline>
+                        <rect x="1" y="3" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" width="22" height="18" stroke-linejoin="miter"></rect>
+                        <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="7" y1="15" x2="5" y2="17" stroke-linejoin="miter"></line>
+                        <line data-color="color-2" fill="none" stroke="#4a5261" stroke-width="2" stroke-linecap="square"
+                              stroke-miterlimit="10" x1="17" y1="15" x2="19" y2="17" stroke-linejoin="miter"></line>
+                    </g>
+                </svg>
+                </svg>
+                Character
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<main class="cd-main">
+    <section class="cd-section King visible">
+        <header>
+            <div class="cd-title">
+                <h2>King</h2>
+                <span>Some text here</span>
+            </div>
+            <a href="#services-content" class="cd-scroll"></a>
+        </header>
+        <div class="cd-content" id="services-content">
+            <section class="clear king-intro">
+                <h2>King</h2>
+                <p style="margin-bottom: 0px;margin-left: 15px;">The three Kings ascended the stage, and their relations were complex and competitive,and the winner could rule the world.But faced with a common threat,Humans may be about to die, where they will go.</p>
+                <ul style="margin-left: 15px">
+                    <li>
+                        <span class="iconfont icon-huangguan"></span>
+                        <h5>Jon Snow</h5>
+                        <p>The family of the stark family had no idea that they were actually one of the only descendants of the targaryen family.
+                            Very simple, kindhearted, experienced so many he still do not know anything, has his own unique way of thinking.
+                            He did not believe that anyone should be prejudiced, and that all the great families of the north were subject to him, and were called the king of the north.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="iconfont icon-huangguan1"></span>
+                        <h5>Daenerys targaryen</h5>
+                        <p>The exiled princess, after many trials, became the mother of the mighty dragon, queen daenerys targaryen.
+                            The only remaining pure targaryen lineage.The only three remaining dragons in the seven kingdoms were in her hands, and the great family came to her.
+                            With a strong army and talented people, she made a beeline for the seven kingdoms with her huge army and headed for cersei, heading for the iron throne.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="iconfont icon-huangguan1"></span>
+                        <h5>Cersei lannister</h5>
+                        <p>The lannister family's only daughter, ruthless and ruthless, knew the rules of the game:
+                            There is no middle ground.All three children are the result of their own and brother incest, in order to destroy their own enemies what is bad?
+                            It's all done.It is safe to sit on the iron throne between the seven kingdoms and the great families.
+                            Now she has been betrayed and ruthless, walking towards a completely mad queen.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </section>
+</main>
+
+<div id="cd-loading-bar" data-scale="1" class="King"></div>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
