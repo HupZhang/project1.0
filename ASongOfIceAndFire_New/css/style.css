@@ -1,8 +1,4 @@
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
+/*Primary style */
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -23,15 +19,12 @@ a {
   text-decoration: none;
 }
 
-/* --------------------------------
-Navigation
--------------------------------- */
+/* Navigation*/
 .cd-side-navigation {
   position: fixed;
   z-index: 3;
   top: 0;
   left: 0;
-  /*min-height: 1000px;*/
   height: 100%;
   width: 74px;
   overflow: hidden;
@@ -42,7 +35,7 @@ Navigation
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 62.5%;
   width: -webkit-calc(100% - 4px);
   width: calc(100% - 4px);
   background-color: #131519;
@@ -147,11 +140,9 @@ Navigation
   }
 }
 
-/* --------------------------------
- Main Content
--------------------------------- */
+/*Main Content */
 .cd-main {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   min-width: 600px;
   max-width: 1076px;
@@ -196,14 +187,17 @@ Navigation
   background: #83b0b9;
   overflow: hidden;
 }
-.cd-section.services header {
-  background-color: #337ab7;
+.cd-section.King header {
+  background-color: #d35657;
 }
-.cd-section.projects header {
+.cd-section.Family header {
   background-color: #343943;
 }
-.cd-section.contact header {
+.cd-section.About header {
   background-color: #e4b162;
+}
+.cd-section.Character header {
+  background-color: #337ab7;
 }
 .cd-section .cd-scroll {
   /* this is the arrow at the bottom of the header */
@@ -214,6 +208,7 @@ Navigation
   left: calc(50vw - (74px - 4px)/2);
   width: 44px;
   height: 44px;
+  margin-left: 80px;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -317,6 +312,7 @@ Navigation
 }
 .cd-title {
   position: absolute;
+  margin-left: 80px;
   top: 50%;
   left: 0;
   /* this prevents title from jumping when the section scroll bar is visible */
@@ -368,7 +364,7 @@ Navigation
 }
 
 .cd-content {
-  padding: 0em 0;
+  padding: 2em 0;
   background-color: #ebebeb;
 }
 .cd-content p {
@@ -385,15 +381,14 @@ Navigation
     max-width: 1076px;
     margin: 0 auto;
     width: 100%;
-    min-height: 1000px;
+    max-height: 100vh;
+  }
+  .cd-content p {
+    font-size: 1.6rem;
   }
 }
 
-/* -------------------------------- 
-
- Loading Bar
-
--------------------------------- */
+/* Loading Bar */
 #cd-loading-bar {
   position: fixed;
   z-index: 2;
@@ -412,24 +407,17 @@ Navigation
 #cd-loading-bar.index {
   background-color: #83b0b9;
 }
-
 #cd-loading-bar.King {
   background-color: #d35657;
 }
-
 #cd-loading-bar.Family {
   background-color: #343943;
 }
 #cd-loading-bar.About {
   background-color: #e4b162;
 }
-
 #cd-loading-bar.Character {
   background-color: #337ab7;
-}
-
-#cd-loading-bar.Contact {
-  background-color: #ebccd1;
 }
 #cd-loading-bar.loading {
   visibility: visible;
