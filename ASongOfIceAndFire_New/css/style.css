@@ -154,7 +154,6 @@ Navigation
   height: 100vh;
   overflow: hidden;
   min-width: 600px;
-  max-width: 1076px;
   width: 100%;
   margin: 0 auto;
 }
@@ -376,7 +375,6 @@ Navigation
 }
 .cd-content p {
   width: 90%;
-  max-width: 800px;
   font-size: 1.4rem;
   line-height: 1.6;
   color: #999999;
@@ -385,7 +383,6 @@ Navigation
   .cd-content {
     padding: 4em 0;
     text-align: center;
-    max-width: 1076px;
     margin: 0 auto;
     width: 100%;
     min-height: 1000px;
@@ -441,4 +438,7 @@ Navigation
   #cd-loading-bar {
     left: 90px;
   }
+}
+html, body, #app  {
+  box-sizing: border-box;
 }
