@@ -7,7 +7,7 @@ backgroundImage = function () {
     };
 
     var img_url = function () {
-        return img_path + img_current_no() + '.jpg';
+        return img_path + img_current_no() + '.JPG';
     };
     var img_current_image;
     if (img_current_image === undefined) {
