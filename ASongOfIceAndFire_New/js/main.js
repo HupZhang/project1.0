@@ -23,13 +23,8 @@ jQuery(document).ready(function($){
 		firstLoad = true;
 	});
 
-	//detect the 'popstate' event - e.g. user clicking the back button
   	$(window).on('popstate', function() {
 	  	if( firstLoad ) {
-		    /*
-		    Safari emits a popstate event on page load - check if firstLoad is true before animating
-		    if it's false - the page has just been loaded 
-		    */
 	      	var newPageArray = location.pathname.split('/'),
 	        //this is the url of the page to be loaded 
 	        newPage = newPageArray[newPageArray.length - 1].replace('.html', '');
@@ -38,7 +33,7 @@ jQuery(document).ready(function($){
 	    firstLoad = true;
 	});
 
-  	//scroll to content if user clicks the .cd-scroll icon
+
 	mainContent.on('click', '.cd-scroll', function(event){
 		event.preventDefault();
 		var scrollId = $(this.hash);
@@ -65,8 +60,7 @@ jQuery(document).ready(function($){
 			windowHeight = $(window).height(),
 			maxOffset = ( barTop + barHeight/2 > windowHeight/2 ) ? barTop : windowHeight- barTop - barHeight,
 			scaleValue = ((2*maxOffset+barHeight)/barHeight).toFixed(3)/1 + 0.001;
-		
-		//place the loading bar next to the selected dashboard element
+
 		loadingBar.data('scale', scaleValue).css({
 		    height: barHeight,
 		    top: barTop
@@ -101,9 +95,7 @@ jQuery(document).ready(function($){
 					var url = newSection+'.html';
 
 					if(url!=window.location && bool){
-				        //add the new page to the window.history
-				        //if the new page was triggered by a 'popstate' event, don't add it
-				        window.history.pushState({path: url},'',url);
+				         window.history.pushState({path: url},'',url);
 				    }
 				});
 			});
